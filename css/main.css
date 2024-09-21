@@ -1348,3 +1348,26 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }/*# sourceMappingURL=main.css.map */
+
+@keyframes heartbeat {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  30% {
+    transform: translateX(-50%) scale(1.04);
+  }
+  60% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+#message {
+  z-index: 1;
+  color: white;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: heartbeat 2.5s infinite;
+}
